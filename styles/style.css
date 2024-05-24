@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Reddit+Mono:wght@200..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    /* height: 100; */
+    box-sizing: border-box;
+    background-color:rgb(121, 87, 133);
+    color: rgb(222, 150, 220);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__Menu__link {
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    /* font-weight: 600px; */
+    color: rgb(108, 19, 19);
+    text-decoration: none;
+
+
+}
+
+.img { 
+    height: 400px;
+    object-fit: cover;
+    width: 280px;
+    text-align: center;
+    border-radius: 40px;
+}
+.projetos { 
+    height: 300px;
+    /* object-fit: cover; */
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+.logo { 
+    height: 40px;
+    object-fit: cover;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.apresentacao {
+    /* margin: 20%; */
+    height: auto;
+    padding-top: 8%;
+    padding-right: 15%;
+    padding-bottom: 8.5%;
+    padding-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao_projeto {
+    /* margin: 20%; */
+    /* height: auto; */
+    padding-top: 5%;
+    padding-right: 15%;
+    padding-bottom: 3%;
+    padding-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo {
+    width: 600px;
+    display: inline;
+    flex-direction: column;
+    gap: 40;
+}
+.apresentacao__projeto {
+    /* width: 600px; */
+    display: inline;
+    /* flex-direction: column; */
+    /* gap: 40; */
+}
+.apresentacao__projetos {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0
+}
+.apresentacao__conteudo__titulo {
+    font-size: 2rem;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;   
+}
+.titulo-destaque {
+    color:rgb(15, 12, 14);
+}
+
+.apresentacao__conteudo__texto { 
+    font-size: 1.5rem;
+    font-family: "Poetsen One", sans-serif;
+}
+.apresentacao__link {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.apresentacao__link__subtitulo {
+    font-family: 'krona one', sans-serif;
+    font-size:1.5rem;
+    margin: 20px;
+    justify-items: center
+
+}
+.apresentacao__link__links {
+     background-color: blanchedalmond; 
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 16px;
+    border: 2px solid #be6d81; 
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px ;
+    text-decoration: none;
+    color: rgb(160, 89, 89);
+    font-family: "Reddit Mono", monospace;
+    
+}
+.rodape{
+    color:#c28b99 ;
+    background-color: rgb(155, 80, 80);
+    text-align: center;
+    align-items: end;
+}
+
+
+@media (max-width: 1080px) {
+    .cabecalho{
+        padding: 10%;  
+    }
+    .cabecalho__menu{
+        justify-content: center;
+        gap: 10px;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .apresentacao__conteudo {
+        width: auto; 
+    }
+    .apresentacao__projeto {
+        width: auto; 
+        padding: 5px;
+    }
+    .apresentacao__projetos {
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0
+    }
+
+    
+}    
+
+
+@media (max-width: 1440px) {
+    .apresentacao_projeto {
+        width: auto; 
+        padding: 5%;
+    }
+
+}
